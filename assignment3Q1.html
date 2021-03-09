@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .content {
+        
+        margin-top: 150px;
+    }
+    h2 {
+        text-align: center;
+        text-shadow: 1px 1px px;
+    }
+
+    input[type=text] {
+        padding: 10px;
+        width: 88%;
+        border: 2px solid #0B2777;
+        border-radius: 5px;
+    
+    }
+
+    #form2 {
+        background-color: #F4FFFF;
+        border: 1px solid black;
+        border-style: dashed;
+        border-radius: 3px;
+        margin-left: 610px;
+        margin-right: 610px;
+        padding: 25px;
+    }
+    input[type=submit] {
+        width: 98%;
+        color: white;
+        background-color: #1A97A7;
+        border: 2px solid #0B2777;
+        border-radius: 5px;
+        padding: 6px;
+    }
+    input[type=submit]:hover {
+        background-color: yellowgreen;
+    }
+    
+</style>
+
+<body>
+    <div class="content">
+        <div class="heading">
+            <h2>Create database and table using</h2>
+            <h2>PHP.</h2>
+        </div>
+        <div id="form2">
+            <form action="table.php" id="form1" method="POST">
+                <h2>Form</h2>
+                <label for="dataname">Database name:</label><br><br>
+                <input type="text" id="dataname" name="dataname"><br><br>
+                <label for="tablename">Table name:</label><br><br>
+                <input type="text" id="tablename" name="tablename"><br><br><br>
+                <input type="submit" value="CREATE">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .content {
+
+        margin-top: 80px;
+    }
+
+    h2 {
+        text-align: center;
+        text-shadow: 1px 1px px;
+    }
+
+    input[type=text] {
+        padding: 10px;
+        width: 88%;
+        border: 2px solid #0B2777;
+        border-radius: 5px;
+
+    }
+
+    input[type=email] {
+        padding: 10px;
+        width: 88%;
+        border: 2px solid #0B2777;
+        border-radius: 5px;
+
+    }
+
+    input[type=tel] {
+        padding: 10px;
+        width: 88%;
+        border: 2px solid #0B2777;
+        border-radius: 5px;
+
+    }
+
+    textarea {
+        padding: 10px;
+        width: 88%;
+        border: 2px solid #0B2777;
+        border-radius: 5px;
+
+
+    }
+
+    #form2 {
+        background-color: #F4FFFF;
+        border: 1px solid black;
+        border-style: dashed;
+        border-radius: 3px;
+        margin-left: 610px;
+        margin-right: 610px;
+        padding: 25px;
+        border-bottom: none;
+    }
+
+    #form3 {
+        background-color: #F4FFFF;
+        border: 1px solid black;
+        border-style: dashed;
+        border-radius: 3px;
+        margin-left: 610px;
+        margin-right: 610px;
+        padding: 30px;
+
+    }
+
+    input[type=submit] {
+        width: 98%;
+        color: white;
+        background-color: #1A97A7;
+        border: 2px solid #0B2777;
+        border-radius: 5px;
+        padding: 6px;
+    }
+
+
+    input[type=submit]:hover {
+        background-color: yellowgreen;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <div class="heading">
+            <h2>Insert Data in Database using PHP.</h2>
+
+        </div>
+        <div id="form2">
+            <form action="insert.php" id="form1" method="POST">
+                <h2>Form</h2>
+                <label for="name">Name:</label><br><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email Address*</label><br><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="phone">Telephone Number:</label><br><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label for="address">Address:</label><br><br>
+                <textarea rows="4" cols="30" id="address" name="address">Enter Address</textarea><br><br>
+
+                <input type="submit" value="INSERT">
+            </form>
+        </div>
+        <div>
+            <form action="display.php" id="form3" method="POST">
+                <input type="submit" value="DISPLAY">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
